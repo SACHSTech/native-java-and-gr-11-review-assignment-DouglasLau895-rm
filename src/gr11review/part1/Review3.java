@@ -8,9 +8,6 @@ public class Review3 {
       // declaring a keyboard "object"
       BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
-      // declare variables
-      int num = 100;
-
       // print odd numbers from 20 to 100
       for (int i = 20; i <= 100; i++) {
 	      if (i % 2 != 0) {
