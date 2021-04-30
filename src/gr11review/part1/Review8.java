@@ -6,6 +6,7 @@ import java.util.Random;
 public class Review8 {
     public static void main(String[] args) throws IOException{
 
+      // create objects
       Random rand = new Random();
 
       // declare variables
