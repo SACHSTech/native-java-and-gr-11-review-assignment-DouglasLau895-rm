@@ -15,9 +15,9 @@ public class Review1 {
      int dayOfTheYear = 0;
 
      // ask user for month and day
-     System.out.println("Enter the month number: ");
+     System.out.print("Enter the month number: "); 
      month = Integer.parseInt(keyboard.readLine());
-     System.out.println("Enter the day number: ");
+     System.out.print("Enter the day number: "); 
      day = Integer.parseInt(keyboard.readLine());
 
      // calculate the day of the year

@@ -6,10 +6,10 @@ import java.text.DecimalFormat;
 public class Review4 {
     public static void main(String[] args) throws IOException{
 
-      // declaring a keyboard "object"
-      BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+      // create objects
+      BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in)); 
 
-      DecimalFormat d = new DecimalFormat("'$'0.00");
+      DecimalFormat moneyFormat = new DecimalFormat("'$'0.00");
 
 
       // declare variables
@@ -24,13 +24,13 @@ public class Review4 {
       double total;
 
       // ask user for number of items
-      System.out.println("How many items do you want to buy? ");
+      System.out.print("How many items do you want to buy? ");
       itemNum = Integer.parseInt(keyboard.readLine());
 
       // enter price of each items
       for (int i = itemNum; i > 0; i--) {
         count++;
-        System.out.println("Enter the price for item " + count + ": ");
+        System.out.print("Enter the price for item " + count + ": ");
         switch (i) {
           case 1:
            price1 = Double.parseDouble(keyboard.readLine());
@@ -50,15 +50,15 @@ public class Review4 {
 
       // calculate subtotal
       subtotal = price1 + price2 + price3 + price4;
-      System.out.println("Subtotal: " + d.format(subtotal));
+      System.out.println("Subtotal: " + moneyFormat.format(subtotal));
 
       // calculate tax
       tax = 0.13 * subtotal;
-      System.out.println("Tax: " + d.format(tax));
+      System.out.println("Tax: " + moneyFormat.format(tax));
 
       // calculate total
       total = tax + subtotal;
-      System.out.println("Total: " + d.format(total));
+      System.out.println("Total: " + moneyFormat.format(total));
 
     }
 }

@@ -18,7 +18,7 @@ public class Review2 {
       System.out.println("3 - print a joke about your teacher");
 
       // ask user for options
-      System.out.println("Choose a menu option: ");
+      System.out.print("Choose a menu option: ");
       menuOption = Integer.parseInt(keyboard.readLine());
 
       // display different jokes according to option choosen
@@ -27,6 +27,15 @@ public class Review2 {
           System.out.println("Why do bees have sticky hair?");
           System.out.println("They always use honeycombs");
           break;
+        case 1:
+         System.out.println("Person 1: Are you having a bad day?");
+         System.out.println("Person 2: Yea, I started out on th wrong foot.");
+        case 2: 
+         System.out.println("What is DNA’s favourite piece of clothing?");
+         System.out.println("Jeans (genes)");
+        case 3: 
+        System.out.println("Why did the teacher wear sunglasses?");
+        System.out.println("Because the class was so bright!");
         default:
           System.out.println("Invalid menu option");
       }
