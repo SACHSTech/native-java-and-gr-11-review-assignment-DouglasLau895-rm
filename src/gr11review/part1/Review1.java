@@ -5,7 +5,7 @@ import java.io.*;
 public class Review1 {
     public static void main(String[] args) throws IOException{
       
-     // declaring a keyboard "object"
+     // create objects
      BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
 
@@ -14,7 +14,7 @@ public class Review1 {
      int day;
      int dayOfTheYear = 0;
 
-     // ask user for month and day
+     // (input) ask user for month and day
      System.out.print("Enter the month number: "); 
      month = Integer.parseInt(keyboard.readLine());
      System.out.print("Enter the day number: "); 
@@ -60,7 +60,7 @@ public class Review1 {
                  break;
          }
 
-     // display the day of the year
+     // (output) display the day of the year
      System.out.println(dayOfTheYear);
     }
 }

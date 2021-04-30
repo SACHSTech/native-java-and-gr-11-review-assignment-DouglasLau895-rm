@@ -5,7 +5,7 @@ import java.io.*;
 public class Review5 {
     public static void main(String[] args) throws IOException{
 
-      // declaring a keyboard "object"
+      // create objects
       BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
       // declare variables
@@ -17,7 +17,7 @@ public class Review5 {
       double currentAmount;
       double currentInterest;
 
-      // ask user for yearlyInvestAmount, compoundInterestRate, and targetAmount
+      // (input) ask user for yearlyInvestAmount, compoundInterestRate, and targetAmount
       System.out.print("Enter the yearly invested amount: ");
       yearlyInvestAmount = Double.parseDouble(keyboard.readLine());
       System.out.print("Enter the compound interest rate: ");
@@ -36,7 +36,7 @@ public class Review5 {
         targetAmountTime++;
       }
 
-      // display targetAmountTime
+      // (output) display targetAmountTime
       System.out.println("The target amount will be earned in " + targetAmountTime + " years.");
 
     }

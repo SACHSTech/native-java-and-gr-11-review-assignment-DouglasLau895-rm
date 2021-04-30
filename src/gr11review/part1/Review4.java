@@ -11,7 +11,6 @@ public class Review4 {
 
       DecimalFormat moneyFormat = new DecimalFormat("'$'0.00");
 
-
       // declare variables
       int itemNum;
       int count = 0;
@@ -23,11 +22,11 @@ public class Review4 {
       double tax;
       double total;
 
-      // ask user for number of items
+      // (input) ask user for number of items
       System.out.print("How many items do you want to buy? ");
       itemNum = Integer.parseInt(keyboard.readLine());
 
-      // enter price of each items
+      // (input) enter price of each items
       for (int i = itemNum; i > 0; i--) {
         count++;
         System.out.print("Enter the price for item " + count + ": ");
@@ -48,15 +47,15 @@ public class Review4 {
         
       }
 
-      // calculate subtotal
+      // calculate and (output) display subtotal
       subtotal = price1 + price2 + price3 + price4;
       System.out.println("Subtotal: " + moneyFormat.format(subtotal));
 
-      // calculate tax
+      // calculate and (output) display tax
       tax = 0.13 * subtotal;
       System.out.println("Tax: " + moneyFormat.format(tax));
 
-      // calculate total
+      // calculate and (output) display total
       total = tax + subtotal;
       System.out.println("Total: " + moneyFormat.format(total));
 

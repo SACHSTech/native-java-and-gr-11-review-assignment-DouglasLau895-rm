@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
 public class Review6 {
     public static void main(String[] args) throws IOException{
 
-      // declaring a keyboard "object"
+      // create objects
       BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
       DecimalFormat moneyFormat = new DecimalFormat("'$'0.00");
@@ -19,7 +19,7 @@ public class Review6 {
       double total;
       double[] price = {0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00};
 
-      // allow user to enter price until they put "0"
+      // (input) allow user to enter price until they put "0"
       do {
       System.out.print("Enter the price for an item: ");
       enterPrice = Double.parseDouble(keyboard.readLine());
@@ -28,17 +28,17 @@ public class Review6 {
       }
       while (enterPrice != 0);
 
-      // calculate subtotal
+      // calculate and (output) display subtotal
       for (int i = 0; i < price.length; i++) {
       subtotal += price[i];
       }
       System.out.println("Subtotal: " + moneyFormat.format(subtotal));
 
-      // calculate tax
+      // calculate and (output) display tax
       tax = subtotal * 0.13;
       System.out.println("Tax: " + moneyFormat.format(tax));
 
-      // calculate total
+      // calculate and (output) display total
       total = subtotal + tax;
       System.out.println("Total: " + moneyFormat.format(total));
 

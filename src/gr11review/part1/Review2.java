@@ -5,7 +5,7 @@ import java.io.*;
 public class Review2 {
     public static void main(String[] args) throws IOException{
 
-      // declaring a keyboard "object"
+      // create objects
       BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
       // declare variables
@@ -17,11 +17,11 @@ public class Review2 {
       System.out.println("2 - print a joke about your clothes");
       System.out.println("3 - print a joke about your teacher");
 
-      // ask user for options
+      // (input) ask user for options
       System.out.print("Choose a menu option: ");
       menuOption = Integer.parseInt(keyboard.readLine());
 
-      // display different jokes according to option choosen
+      // (output) display different jokes according to option choosen
       switch (menuOption) {
         case 0:
           System.out.println("Why do bees have sticky hair?");

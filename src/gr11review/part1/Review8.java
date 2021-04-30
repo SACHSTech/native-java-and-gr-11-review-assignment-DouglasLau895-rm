@@ -14,7 +14,7 @@ public class Review8 {
       int num3;
       int triplePulls = 0;
 
-      // 1000 pulls
+      // make 1000 random pulls, and (output) display three in a row)
       for (int i = 0; i < 1000; i++) {
       num1 = rand.nextInt(8);
       num2 = rand.nextInt(8);
@@ -22,7 +22,7 @@ public class Review8 {
 
       System.out.println(num1 + " " + num2 + " " + num3);
 
-      // determine num of triple pulls
+      // determine and (output) display number of triple pulls
       if (num1 == num2 && num1 == num3 && num2 == num3) {
         triplePulls++;
       }
