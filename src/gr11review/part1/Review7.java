@@ -17,7 +17,6 @@ public class Review7 {
       String oddChar = "";
 
       // ask user to enter theSentence
-      System.out.println("Enter the Sentence: ");
       theSentence = keyboard.readLine();
 
       // determine the number of characters in the theSentence

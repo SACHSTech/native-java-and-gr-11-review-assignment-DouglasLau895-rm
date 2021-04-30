@@ -15,7 +15,7 @@ public class Review8 {
       int triplePulls = 0;
 
       // 1000 pulls
-      for (int i = 0; i <= 1000; i++) {
+      for (int i = 0; i < 1000; i++) {
       num1 = rand.nextInt(8);
       num2 = rand.nextInt(8);
       num3 = rand.nextInt(8);

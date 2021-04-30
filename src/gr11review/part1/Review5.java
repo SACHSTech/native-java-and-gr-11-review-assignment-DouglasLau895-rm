@@ -18,11 +18,11 @@ public class Review5 {
       double currentInterest;
 
       // ask user for yearlyInvestAmount, compoundInterestRate, and targetAmount
-      System.out.println("Enter the yearly invested amount: ");
+      System.out.print("Enter the yearly invested amount: ");
       yearlyInvestAmount = Double.parseDouble(keyboard.readLine());
-      System.out.println("Enter the compound interest rate: ");
+      System.out.print("Enter the compound interest rate: ");
       compoundInterestRate = Double.parseDouble(keyboard.readLine());
-      System.out.println("Enter the target amount: ");
+      System.out.print("Enter the target amount: ");
       targetAmount = Double.parseDouble(keyboard.readLine());
 
       // calculate targetAmountTime
@@ -37,7 +37,7 @@ public class Review5 {
       }
 
       // display targetAmountTime
-      System.out.println("The target amount will be earned in " + targetAmountTime + " years. ");
+      System.out.println("The target amount will be earned in " + targetAmountTime + " years.");
 
     }
 }

@@ -9,7 +9,7 @@ public class Review6 {
       // declaring a keyboard "object"
       BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
-      DecimalFormat d = new DecimalFormat("'$'0.00");
+      DecimalFormat moneyFormat = new DecimalFormat("'$'0.00");
 
       // declare variables
       double enterPrice;
@@ -21,7 +21,7 @@ public class Review6 {
 
       // allow user to enter price until they put "0"
       do {
-      System.out.println("Enter price for item " + count + ": ");
+      System.out.print("Enter the price for an item: ");
       enterPrice = Double.parseDouble(keyboard.readLine());
       price[count] = enterPrice;
       count++;
@@ -32,15 +32,15 @@ public class Review6 {
       for (int i = 0; i < price.length; i++) {
       subtotal += price[i];
       }
-      System.out.println("Subtotal: " + d.format(subtotal));
+      System.out.println("Subtotal: " + moneyFormat.format(subtotal));
 
       // calculate tax
       tax = subtotal * 0.13;
-      System.out.println("Tax : " + d.format(tax));
+      System.out.println("Tax: " + moneyFormat.format(tax));
 
       // calculate total
       total = subtotal + tax;
-      System.out.println("Total: " + d.format(total));
+      System.out.println("Total: " + moneyFormat.format(total));
 
     }
 }
